@@ -8,6 +8,7 @@ It is written for the LDM8E display controller and uses the LDM8E-Library.
 See the GitHub repos for the [hardware](https://github.com/ndornseif/LDM8E-LEDDisplayController) and [library](https://github.com/ndornseif/LDM8E-Library) for more info.  
 
 ![Decimal clock showing 7882 (18:55:00.480)](Images/clock_running.png)  
+The clock shows "7882" which is 18:55:00.480 in 24-hour time.  
 
 ## Installation
 The code should work on any LDM8E as long as the dimming mode and WiFi credentials are properly configured.  
