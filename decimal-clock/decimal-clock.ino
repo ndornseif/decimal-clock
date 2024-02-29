@@ -59,6 +59,10 @@ One increment corresponds to 8.64 seconds.
 const int nightStart = 8750; //21:00
 const int nightEnds = 2083; //05:00
 
+//If the decimal points should be used. 
+//Will show "1.23.4" instead of "1234" 
+const bool useDP = true;
+
 //Set up a display named "mydisplay"
 LDM8EDisplay mydisplay(dimmingMode, numModules);
 
@@ -117,7 +121,7 @@ void sendTimeToDisplay(){
   }else{
     int currentTime = timeToDecimal(&timeinfo);
     checkBrightness(currentTime);
-    mydisplay.writeDisplay(currentTime);
+    mydisplay.writeDisplay(currentTime, 0x01000100);
     Serial.println(currentTime);
   }
 }
