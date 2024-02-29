@@ -121,9 +121,9 @@ void sendTimeToDisplay(){
   }else{
     int currentTime = timeToDecimal(&timeinfo);
     checkBrightness(currentTime);
-    long orMask = 0
+    long orMask = 0;
     if(useDP){
-      orMask = 0x01000100
+      orMask = 0x01000100;
     }
     mydisplay.writeDisplay(currentTime, orMask);
     Serial.println(currentTime);
